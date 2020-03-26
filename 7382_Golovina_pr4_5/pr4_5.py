@@ -52,7 +52,7 @@ dataset_y = np.array([int(logic(*i)) for i in dataset_x])
 print(dataset_y)
 #создание модели
 model = Sequential()
-model.add(Dense(9, activation='relu', input_shape=(3,)))
+model.add(Dense(16, activation='relu', input_shape=(3,)))
 model.add(Dense(3, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
